@@ -1,32 +1,31 @@
 import style from "./Profile.module.css";
 
-export const Profile = ({ username }) => {
+const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div>
+    <div className={style.profile}>
       <div>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-          alt="User avatar"
-        />
-        <p>{username}</p>
-        <p>@pmarica</p>
-        <p>Salvador, Brasil</p>
+        <img className={style.avatar} src={image} alt={name} />
+        <p className={style.name}>{name}</p>
+        <p className={style.text}>{tag}</p>
+        <p className={style.text}>{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>1000</span>
+      <ul className={style.stats}>
+        <li className={style.stat}>
+          <span className={style.label}>Followers</span>
+          <span className={style.value}>{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>2000</span>
+        <li className={style.stat}>
+          <span className={style.label}>Views</span>
+          <span className={style.value}>{stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>3000</span>
+        <li className={style.stat}>
+          <span className={style.label}>Likes</span>
+          <span className={style.value}>{stats.likes}</span>
         </li>
       </ul>
     </div>
   );
 };
+
+export default Profile;

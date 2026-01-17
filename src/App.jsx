@@ -1,8 +1,8 @@
-import { Profile } from "./components/Profile";
+import Profile from "./components/Profile/Profile";
 
 const userData = {
   username: "Jacques Gluke",
-  tag: "jgluke",
+  tag: "@jgluke",
   location: "Ocho Rios, Jamaica",
   avatar: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
   stats: {
@@ -25,3 +25,5 @@ export const App = () => {
     </>
   );
 };
+
+export default App;
