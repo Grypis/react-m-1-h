@@ -1,0 +1,25 @@
+.image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    font-family: sans-serif;
+    margin: 5px;
+    text-align: center;
+}
+
+.status {
+    font-family: sans-serif;
+    margin: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.online {
+    color: green;
+}
+
+.offline {
+    color: red;
+}
